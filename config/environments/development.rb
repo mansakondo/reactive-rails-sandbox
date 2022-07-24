@@ -1,6 +1,10 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  config.cache_store = :redis_cache_store, {url: ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" }}
+
+  config.session_store :cache_store, key: "_sessions_development", compress: true, pool_size: 5, expire_after: 1.year
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time

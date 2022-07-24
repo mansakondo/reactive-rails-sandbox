@@ -4,10 +4,12 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.1.0",
     "@hotwired/turbo-rails": "^7.1.3",
+    "@rails/actioncable": "^7.0.3-1",
     "autoprefixer": "^10.4.7",
     "esbuild": "^0.14.49",
     "esbuild-rails": "^1.0.3",
     "postcss": "^8.4.14",
+    "stimulus_reflex": "^3.5.0-pre9",
     "tailwindcss": "^3.1.6"
   },
   "scripts": {
