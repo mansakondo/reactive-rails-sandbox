@@ -9,5 +9,5 @@ tasks:
   - name: "Redis server"
     command: redis-server
   - name: "Rails server"
-    init: yarn install && yarn build && bin/setup && bin/rails dev:cache && bundle exec rake assets:precompile
+    init: yarn install && yarn build && bin/setup && bundle exec rake assets:precompile
     command: bin/rails server -b 0.0.0.0
